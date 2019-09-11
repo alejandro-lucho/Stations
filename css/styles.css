@@ -1,0 +1,19 @@
+body{
+  /*background: url(../images/networking2.jpg);*/
+  background-color: black;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+
+.forma{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    height: 200px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.5);
+}

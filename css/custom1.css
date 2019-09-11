@@ -1,0 +1,37 @@
+
+/* custom style for login page */
+.card {
+    padding: 15px;
+    max-width: 400px;
+    height: auto;
+    margin: 10px auto;
+    text-align: center;
+}
+/* /end custom style for login page */
+
+.formulario1{
+  margin-top: 20px;
+  border: 1px;
+  padding: 15px;
+  border-style: solid;
+
+}
+.container{
+  margin-top: 30px;
+
+
+}
+
+
+body {
+    background-color: rgb(224, 224, 224);
+}
+
+p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+ h1, h3 {
+    margin-top: 30px;
+}
