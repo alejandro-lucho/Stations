@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>fallas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom1.css">
+  </head>
+  <body>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<div class="container">
+<!--<form class="text-center border border-light p-5">-->
+  <form class="text-center" action="insertarafalla.php" method="post">
+      <p class="h4 mb-4">Agregar Fallas</p>
+      <div class="form-row mb-0">
+          <div class="col">
+              <input type="text" name="linea" class="form-control mb-4" placeholder="Linea Produccion" required>
+              <input type="text" name="estacion" class="form-control mb-4" placeholder="Nombre Estacion" required>
+              <input type="text" name="Nestacion" class="form-control mb-4" placeholder="Numero Estacion" required>
+              <input type="text" name="Nfalla" class="form-control mb-4" placeholder="Nombre Falla" required>
+          </div>
+          <div class="col">
+            <input type="text" name="solucion" class="form-control mb-4" placeholder="Solucion" required>
+            <input type="text" name="tiempoR" class="form-control mb-4" placeholder="Tiempo Reparacion" required>
+            <select name="pregunta" class="browser-default custom-select mb-4">
+                <option value="" disabled selected>Se detuvo la estacion?</option>
+                <option value="si">Si</option>
+                <option value="no">No</option>
+            </select>
+            <input type="text" name="Ncelda" class="form-control mb-4" placeholder="Numero Celda" required>
+          </div>
+
+      </div>
+
+      <div class="form-group mb-3">
+        <select name="estatus" class="browser-default custom-select mb-4">
+            <option value="" disabled selected>Se reparo la celda?</option>
+            <option value="opened">si</option>
+            <option value="closed">No</option>
+        </select>
+          <textarea class="form-control rounded-0" name="comentario" rows="4" placeholder="Comentarios"></textarea>
+      </div>
+      <button class="btn btn-info btn-block" type="submit">Enviar</button>
+  </form>
+</div>
+
+
+
+  </body>
+</html>
